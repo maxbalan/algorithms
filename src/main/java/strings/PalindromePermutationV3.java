@@ -5,7 +5,7 @@ package strings;
  *
  * @author Maxim Balan
  **/
-public class PolindromePermutationV3 {
+public class PalindromePermutationV3 {
     // find if a string can be polindrome (a string that can be written forward and backward the same way)
 //    string with even length cannot have chars with odd count
 //  string with odd length cannot have all chars with even count
