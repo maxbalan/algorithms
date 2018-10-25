@@ -3,12 +3,22 @@ package strings;
 /**
  * 06/10/18
  *
+ * Question:
+ *
+ * Find all permutation of A in B string.
+ *
+ * Solution:
+ *
+ * not really an obvious one but convert the B string into a number which is the multiplication of each character
+ * then take a character from A string and multiply to previous ones and devide by the one eliminated and if this 2 are
+ * the same then it means we found a permutation
+ *
  * @author Maxim Balan
  **/
 public class FindPermutationAinB {
     public static void main(String[] args) {
         String s = "abc";
-        String b = "abcdabccbac"; // 6 permutations
+        String b = "abcdabccbac"; // 4 permutations
 
         int counter = 0;
 
