@@ -21,7 +21,7 @@ import javax.sound.sampled.Line;
  * node of the duplicated node so we can skip it, if there are no duplicates then replace the previous pointer with current
  * value and get the next node.
  *
- * the Big-O if O(N) where N is the number of elements in the linked list
+ * the Big-O if O(N) where N is the number of elements in the linked list and the space complexity is O(1)
  *
  *
  * Solution with no buffer:
