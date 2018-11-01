@@ -7,7 +7,7 @@ package linkedlist;
  **/
 public class LinkedListNode <P> {
 
-    private final P value;
+    private P value;
     private LinkedListNode<P> next;
 
     LinkedListNode(P value) {
@@ -16,6 +16,10 @@ public class LinkedListNode <P> {
 
     P getValue() {
         return this.value;
+    }
+
+    public void setValue(P value) {
+        this.value = value;
     }
 
     LinkedListNode<P> getNext() {

@@ -26,7 +26,7 @@ package linkedlist;
 public class KthElementToLastV1 {
 
     public static void main(String[] args) {
-        LinkedListNode<Integer> ll = LinkedListUtils.insertIntegers(1, 11);
+        LinkedListNode<Integer> ll = LinkedListUtils.generateIntegerLinkedList(1, 11);
 
         returnKthToLastNode(ll, 2);
         System.out.println(ll);

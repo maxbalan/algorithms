@@ -3,8 +3,6 @@ package linkedlist;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.sound.sampled.Line;
-
 /**
  * 30/10/18
  *
@@ -35,20 +33,20 @@ import javax.sound.sampled.Line;
 public class RemoveDuplicates {
 
     public static void main(String[] args) {
-        LinkedListNode<Integer> ll = LinkedListUtils.insertIntegers(1, 100);
+        LinkedListNode<Integer> ll = LinkedListUtils.generateIntegerLinkedList(1, 100);
 
         //insert some duplicates
-        LinkedListUtils.insertIntegers(50, 60, ll);
+        LinkedListUtils.insertInteger(50, 60, ll);
 
         removeDuplicatesWithBuffer(ll);
 
         System.out.println(ll);
 
 
-        LinkedListNode<Integer> ll2 = LinkedListUtils.insertIntegers(1, 100);
+        LinkedListNode<Integer> ll2 = LinkedListUtils.generateIntegerLinkedList(1, 100);
 
         //insert some duplicates
-        LinkedListUtils.insertIntegers(50, 60, ll2);
+        LinkedListUtils.insertInteger(50, 60, ll2);
 
         removeDuplicatesWithNoBuffer(ll2);
 
