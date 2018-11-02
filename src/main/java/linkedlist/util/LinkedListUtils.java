@@ -1,4 +1,4 @@
-package linkedlist;
+package linkedlist.util;
 
 import java.util.Random;
 
@@ -7,9 +7,9 @@ import java.util.Random;
  *
  * @author Maxim Balan
  **/
-class LinkedListUtils {
+public class LinkedListUtils {
 
-    static LinkedListNode<Integer> generateIntegerLinkedList(int from, int upTo) {
+    public static LinkedListNode<Integer> generateIntegerLinkedList(int from, int upTo) {
         LinkedListNode<Integer> fakeHead = new LinkedListNode<>(0);
         LinkedListNode<Integer> x = fakeHead;
 
@@ -21,7 +21,7 @@ class LinkedListUtils {
         return fakeHead.getNext();
     }
 
-    static void insertInteger(int from, int upTo, LinkedListNode<Integer> ll) {
+    public static void insertInteger(int from, int upTo, LinkedListNode<Integer> ll) {
         LinkedListNode<Integer> x = ll;
 
         while(x.getNext() != null) {
@@ -34,7 +34,7 @@ class LinkedListUtils {
         }
     }
 
-    static  LinkedListNode<Integer> generateRandomIntegerLinkedList(int min, int max, int size) {
+    public static  LinkedListNode<Integer> generateRandomIntegerLinkedList(int min, int max, int size) {
         Random random = new Random();
 
         LinkedListNode<Integer> fakeHead = new LinkedListNode<>(0);

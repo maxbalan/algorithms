@@ -1,5 +1,8 @@
 package linkedlist;
 
+import linkedlist.util.LinkedListNode;
+import linkedlist.util.LinkedListUtils;
+
 /**
  * 30/10/18
  *

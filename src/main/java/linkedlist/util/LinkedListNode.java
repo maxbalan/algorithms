@@ -1,4 +1,4 @@
-package linkedlist;
+package linkedlist.util;
 
 /**
  * 30/10/18
@@ -10,11 +10,11 @@ public class LinkedListNode <P> {
     private P value;
     private LinkedListNode<P> next;
 
-    LinkedListNode(P value) {
+    public LinkedListNode(P value) {
         this.value = value;
     }
 
-    P getValue() {
+    public P getValue() {
         return this.value;
     }
 
@@ -22,11 +22,11 @@ public class LinkedListNode <P> {
         this.value = value;
     }
 
-    LinkedListNode<P> getNext() {
+    public LinkedListNode<P> getNext() {
         return this.next;
     }
 
-    LinkedListNode setNext(LinkedListNode<P> next) {
+    public LinkedListNode setNext(LinkedListNode<P> next) {
         this.next = next;
         return this;
     }
