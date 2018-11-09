@@ -21,6 +21,17 @@ public class LinkedListUtils {
         return fakeHead.getNext();
     }
 
+    public static void insertIntegerReverse(int from, int upTo, LinkedListNode<Integer> list) {
+        LinkedListNode<Integer> x = list;
+
+        while(x.getNext() != null) x = x.getNext();
+
+        for (int i = upTo; i > from; i--) {
+            x.setNext(new LinkedListNode<>(i));
+            x = x.getNext();
+        }
+    }
+
     public static void insertInteger(int from, int upTo, LinkedListNode<Integer> ll) {
         LinkedListNode<Integer> x = ll;
 
