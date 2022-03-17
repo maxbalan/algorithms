@@ -11,7 +11,7 @@ public class CheckAisBpermutation {
         String a = "asd ";
         String b = "sda";
 
-        System.out.println(String.format("is b [ %s ] permutation of a [ %s ]: %b", b, a, check(a,b)));
+        System.out.printf("is b [ %s ] permutation of a [ %s ]: %b%n", b, a, check(a, b));
     }
 
 
