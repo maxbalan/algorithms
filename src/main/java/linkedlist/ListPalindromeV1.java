@@ -25,8 +25,6 @@ import linkedlist.util.LinkedListUtils;
  * <p>
  * A small note is when we divide the counter we have to make sure it is even as for the case it is odd, subtracting one
  * will make it even and after dividing it we add 1 just so we compare the mid point too
- *
- * @author Maxim Balan
  **/
 public class ListPalindromeV1 {
     public static void main(String[] args) {

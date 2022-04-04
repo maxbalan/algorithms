@@ -2,7 +2,6 @@ package linkedlist;
 
 import linkedlist.util.ListNode;
 
-import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Stack;
 
@@ -36,8 +35,6 @@ import java.util.Stack;
  * <p>
  * Input: lists = [[]]
  * Output: []
- *
- * @author Maxim Balan
  **/
 public class MergeAllSortedListsV2 {
 

@@ -7,8 +7,6 @@ import java.util.List;
 
 /**
  * 08/10/18
- *
- * @author Maxim Balan
  **/
 public class FindPermutationNumber {
     public static void main(String[] args) {

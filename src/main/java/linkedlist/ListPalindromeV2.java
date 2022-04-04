@@ -34,8 +34,6 @@ import java.util.Stack;
  * so the slow pointer will push the value of the nodes into a Stack and when the fast pointer reached the end, this means
  * we actually reached the middle of the list. Now when popping elements out of the Stack we have them in the inverse order
  * all that remains is to compare them to the rest of the slow pointer list
- *
- * @author Maxim Balan
  **/
 public class ListPalindromeV2 {
     public static void main(String[] args) {

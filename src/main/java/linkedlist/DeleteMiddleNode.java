@@ -18,8 +18,6 @@ import linkedlist.util.LinkedListUtils;
  * As this is a singly linked list we have no way of knowing if this is the first node or not, unless the size of the
  * list is also given, but we can understand if this is the last node by checking that the next link is empty, so the
  * problem itself is fairly easy as we only replace the link to to skip the node we were given
- *
- * @author Maxim Balan
  **/
 public class DeleteMiddleNode {
 

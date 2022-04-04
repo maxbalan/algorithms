@@ -2,8 +2,6 @@ package strings;
 
 /**
  * 06/10/18
- *
- * @author Maxim Balan
  **/
 public class PalindromePermutationV1 {
     // find if a string can be palindrome (a string that can be written forward and backward the same way)

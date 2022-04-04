@@ -22,8 +22,6 @@ import linkedlist.util.LinkedListUtils;
  * <p>
  * time: O(N) where N is the number of nodes in the list
  * space: O(N) where N is the number of nodes in the list
- *
- * @author Maxim Balan
  **/
 public class KthElementToLastV1 {
 

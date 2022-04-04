@@ -29,8 +29,6 @@ import java.util.Set;
  * the idea in this case is to iterate for each value trough the rest of the linked list, it sacrifices the time though
  * <p>
  * the Big-O is O(N^2)  where N is the number of elements in the linked list and the space complexity is O(1)
- *
- * @author Maxim Balan
  **/
 public class RemoveDuplicates {
 

@@ -4,8 +4,6 @@ import java.util.Random;
 
 /**
  * 30/10/18
- *
- * @author Maxim Balan
  **/
 public class LinkedListUtils {
 

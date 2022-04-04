@@ -14,8 +14,6 @@ import java.util.LinkedList;
  * solution 1:
  * Use linked list to rotate characters around get and remove first one and put at the end then convert the list to a
  * string and compare with the expected
- *
- * @author Maxim Balan
  **/
 public class StringRotationV1 {
 

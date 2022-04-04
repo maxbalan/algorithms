@@ -21,8 +21,6 @@ import linkedlist.util.LinkedListUtils;
  * so in order to be able to sort the list this way we will need to start with 2 lists one for the left values and other
  * for the right ones, everything less then X should go into left list and everything else into the right one also we
  * need to links the the head of each list so we can merge them together and return the result
- *
- * @author Maxim Balan
  **/
 public class Partition {
 

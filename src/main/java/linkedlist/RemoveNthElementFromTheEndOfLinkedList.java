@@ -32,8 +32,6 @@ import linkedlist.util.ListNode;
  * 1 <= sz <= 30
  * 0 <= Node.val <= 100
  * 1 <= n <= sz
- *
- * @author Maxim Balan
  **/
 public class RemoveNthElementFromTheEndOfLinkedList {
 

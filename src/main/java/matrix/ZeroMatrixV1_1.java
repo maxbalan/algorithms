@@ -12,8 +12,6 @@ package matrix;
  * <p>
  * this algorithm works fine so the time function is O(N x M) where N and M are the rows and columns and the space
  * function is O(N x M) as we have 2 vectors with flags.
- *
- * @author Maxim Balan
  **/
 public class ZeroMatrixV1_1 {
 

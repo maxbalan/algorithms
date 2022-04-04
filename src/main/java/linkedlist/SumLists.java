@@ -38,8 +38,6 @@ import linkedlist.util.LinkedListUtils;
  * recursive call we subtract 1 for each call until it reaches 0 or less then we start actually taking nodes out of the
  * list so when we reach the end of the longer list we actually reach the end of the shortest list too. After that on each
  * return we start calculating the current number and setting the carry over in the head of the result list.
- *
- * @author Maxim Balan
  **/
 public class SumLists {
 

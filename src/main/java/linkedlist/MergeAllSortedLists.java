@@ -34,8 +34,6 @@ import java.util.ArrayDeque;
  * <p>
  * Input: lists = [[]]
  * Output: []
- *
- * @author Maxim Balan
  **/
 public class MergeAllSortedLists {
 

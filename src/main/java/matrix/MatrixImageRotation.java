@@ -19,8 +19,6 @@ package matrix;
  * || c | c | c | c  \/
  * d | d | d | d
  * <------
- *
- * @author Maxim Balan
  **/
 public class MatrixImageRotation {
 

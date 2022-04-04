@@ -2,8 +2,6 @@ package strings;
 
 /**
  * 08/10/18
- *
- * @author Maxim Balan
  **/
 public class OneAwayEditV1_1 {
     public static void main(String[] args) {

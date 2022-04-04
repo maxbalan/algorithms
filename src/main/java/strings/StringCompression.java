@@ -7,8 +7,6 @@ import java.util.List;
 
 /**
  * 09/10/18
- *
- * @author Maxim Balan
  **/
 public class StringCompression {
     /**

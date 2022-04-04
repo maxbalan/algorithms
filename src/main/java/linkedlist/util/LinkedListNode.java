@@ -2,8 +2,6 @@ package linkedlist.util;
 
 /**
  * 30/10/18
- *
- * @author Maxim Balan
  **/
 public class LinkedListNode<P> {
 

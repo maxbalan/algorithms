@@ -6,8 +6,6 @@ import java.util.Stack;
 
 /**
  * Date: 3/17/22
- *
- * @author Maxim Balan
  **/
 public class RemoveDuplicateLetters {
     public static void main(String[] args) {

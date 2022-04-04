@@ -31,8 +31,6 @@ import java.util.Arrays;
  * 3 <= nums.length <= 1000
  * -1000 <= nums[i] <= 1000
  * -104 <= target <= 104
- *
- * @author Maxim Balan
  **/
 public class ThreeSumClosest {
 

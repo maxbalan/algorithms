@@ -5,8 +5,6 @@ import java.util.List;
 
 /**
  * 08/10/18
- *
- * @author Maxim Balan
  **/
 public class FindAllPermutations {
     List<String> results = new ArrayList<>();

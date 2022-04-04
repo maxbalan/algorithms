@@ -2,8 +2,6 @@ package numbers;
 
 /**
  * Date: 3/17/22
- *
- * @author Maxim Balan
  **/
 public class ReverseInteger {
     public static void main(String[] args) {

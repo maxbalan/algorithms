@@ -27,8 +27,6 @@ import java.util.Stack;
  * <p>
  * Input: s = "(]"
  * Output: false
- *
- * @author Maxim Balan
  **/
 public class ValidateParentheses {
     public static void main(String[] args) {

@@ -24,8 +24,6 @@ import java.util.List;
  * Constraints:
  * <p>
  * 1 <= n <= 8
- *
- * @author Maxim Balan
  **/
 public class GenerateParentheses {
     public static void main(String[] args) {

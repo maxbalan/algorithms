@@ -2,8 +2,6 @@ package linkedlist.util;
 
 /**
  * Date: 4/3/22
- *
- * @author Maxim Balan
  **/
 public class ListNode {
     public int val;

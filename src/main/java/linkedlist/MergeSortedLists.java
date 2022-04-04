@@ -27,8 +27,6 @@ import linkedlist.util.ListNode;
  * <p>
  * Input: list1 = [], list2 = [0]
  * Output: [0]
- *
- * @author Maxim Balan
  **/
 public class MergeSortedLists {
 

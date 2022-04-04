@@ -21,8 +21,6 @@ package matrix;
  * so to optimize the space function we can do the following instead of storing the zero's exact position in the matrix
  * we can just set the first row an column with zero for each zero we find and if the first row and column has zero
  * we cna set a simple flag.
- *
- * @author Maxim Balan
  **/
 public class ZeroMatrixV1_2 {
 

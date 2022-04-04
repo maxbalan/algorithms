@@ -2,8 +2,6 @@ package strings;
 
 /**
  * 06/10/18
- *
- * @author Maxim Balan
  **/
 public class ReplaceSpaces {
     public static void main(String[] args) {
