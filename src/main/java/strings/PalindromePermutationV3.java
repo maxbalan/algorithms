@@ -18,7 +18,7 @@ public class PalindromePermutationV3 {
     static boolean isPolindrome(char[] string) {
         int flagVector = 0;
 
-        for (int i=0; i < string.length; i++) {
+        for (int i = 0; i < string.length; i++) {
             int x = getCharNumber(string[i]);
 
             if (x != -1) {

@@ -23,17 +23,17 @@ public class ReplaceSpaces {
         // find spaces
         int spacesCount = 0;
         for (int i = 0; i < trueLength; i++) {
-            if (a[i] == ' ') spacesCount ++;
+            if (a[i] == ' ') spacesCount++;
         }
 
         //calculate the final length
-        int index = trueLength + (spacesCount *2)-1;
+        int index = trueLength + (spacesCount * 2) - 1;
 
-        for (int i = trueLength-1; i >= 0; i--) {
+        for (int i = trueLength - 1; i >= 0; i--) {
             if (a[i] == ' ') {
                 a[index] = '0';
-                a[index-1] = '2';
-                a[index-2] = '%';
+                a[index - 1] = '2';
+                a[index - 2] = '%';
 
                 index -= 3;
             } else {

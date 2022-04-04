@@ -1,7 +1,6 @@
 package strings;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -29,7 +28,7 @@ public class FindAllPermutations {
 
     void permutation(String str, String prefix) {
         if (str.length() == 0) {
-            boolean a = prefix.substring(0, 1).equals("0");
+            boolean a = prefix.charAt(0) == '0';
             if (!a) {
                 if (!results.contains(prefix)) {
                     results.add(prefix);

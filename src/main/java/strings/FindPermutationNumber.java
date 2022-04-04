@@ -26,11 +26,11 @@ public class FindPermutationNumber {
         System.out.println(getSimilarNumbersCount(getDigit(n)));
     }
 
-//    get the digit length of a number
+    //    get the digit length of a number
     static List<Integer> getDigit(int n) {
         List<Integer> digit = new ArrayList<>();
 
-        while(n > 0) {
+        while (n > 0) {
             digit.add(n % 10);
             n /= 10;
         }
@@ -38,11 +38,11 @@ public class FindPermutationNumber {
         return digit;
     }
 
-//    calculate the factorial of a number
+    //    calculate the factorial of a number
     static int getFactorial(int number) {
         int result = 1;
-        for (int i = 1 ; i <= number ; i++) {
-            result = result*i;
+        for (int i = 1; i <= number; i++) {
+            result = result * i;
         }
         return result;
     }
@@ -50,30 +50,30 @@ public class FindPermutationNumber {
     static int getSimilarNumbersCount(List<Integer> digits) {
         int n = digits.size();
         int a = Collections.frequency(digits, 0); //count how many zeros are in the supplied number
-        List<Integer> distinctDigits = new ArrayList<> (new HashSet<>(digits)); // create a copy of the array with only distinct digits
+        List<Integer> distinctDigits = new ArrayList<>(new HashSet<>(digits)); // create a copy of the array with only distinct digits
 
         int denominator = 1;
 
-        for (int i = 0 ; i < distinctDigits.size() ; i++) {
+        for (int i = 0; i < distinctDigits.size(); i++) {
             denominator = denominator * getFactorial(
-                Collections.frequency(digits, distinctDigits.get(i))
-                                                    );
+                    Collections.frequency(digits, distinctDigits.get(i))
+            );
         }
 
 //        System.out.println(denominator);
 
-        int permutation = getFactorial(n)/denominator;
+        int permutation = getFactorial(n) / denominator;
         if (a > 0) { // If there are zeros in the number
             denominator = 1;
 
-            for (int i = 0 ; i < distinctDigits.size() ; i++) {
+            for (int i = 0; i < distinctDigits.size(); i++) {
                 if (distinctDigits.get(i) == 0) {
-                    denominator = denominator * getFactorial(Collections.frequency(digits, distinctDigits.get(i))-1);
+                    denominator = denominator * getFactorial(Collections.frequency(digits, distinctDigits.get(i)) - 1);
                 } else {
                     denominator = denominator * getFactorial(Collections.frequency(digits, distinctDigits.get(i)));
                 }
             }
-            int leadingZeroCount = getFactorial(n-1)/denominator;
+            int leadingZeroCount = getFactorial(n - 1) / denominator;
             permutation = permutation - leadingZeroCount;
         }
         return permutation;

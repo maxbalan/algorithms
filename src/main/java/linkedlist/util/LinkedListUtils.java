@@ -24,7 +24,7 @@ public class LinkedListUtils {
     public static void insertIntegerReverse(int from, int upTo, LinkedListNode<Integer> list) {
         LinkedListNode<Integer> x = list;
 
-        while(x.getNext() != null) x = x.getNext();
+        while (x.getNext() != null) x = x.getNext();
 
         for (int i = upTo; i > from; i--) {
             x.setNext(new LinkedListNode<>(i));
@@ -35,7 +35,7 @@ public class LinkedListUtils {
     public static void insertInteger(int from, int upTo, LinkedListNode<Integer> ll) {
         LinkedListNode<Integer> x = ll;
 
-        while(x.getNext() != null) {
+        while (x.getNext() != null) {
             x = x.getNext();
         }
 
@@ -45,14 +45,14 @@ public class LinkedListUtils {
         }
     }
 
-    public static  LinkedListNode<Integer> generateRandomIntegerLinkedList(int min, int max, int size) {
+    public static LinkedListNode<Integer> generateRandomIntegerLinkedList(int min, int max, int size) {
         Random random = new Random();
 
         LinkedListNode<Integer> fakeHead = new LinkedListNode<>(0);
         LinkedListNode<Integer> x = fakeHead;
 
         for (int i = 0; i < size; i++) {
-            int a = random.nextInt(max - min +1) + min;
+            int a = random.nextInt(max - min + 1) + min;
             x.setNext(new LinkedListNode<>(a));
             x = x.getNext();
         }

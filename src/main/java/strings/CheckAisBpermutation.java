@@ -15,13 +15,13 @@ public class CheckAisBpermutation {
     }
 
 
-//    time complexity is O(n) where "n" is the length of any of the strings
+    //    time complexity is O(n) where "n" is the length of any of the strings
 //    space complexity is O(1)
     static boolean check(String a, String b) {
-        if (a.length() !=b.length()) return false;
+        if (a.length() != b.length()) return false;
 
-        int sumA = 0, sumB=0;
-        for (int i = 0; i< a.length(); i++) {
+        int sumA = 0, sumB = 0;
+        for (int i = 0; i < a.length(); i++) {
             sumA += a.charAt(i);
             sumB += b.charAt(i);
         }

@@ -2,26 +2,25 @@ package matrix;
 
 /**
  * 14/10/18
- *
+ * <p>
  * Write an algorithm such that if an element in an M x N matrix is 0, its entire row and column are set to 0
- *
+ * <p>
  * Solution 1:
- *
+ * <p>
  * the idea is to have 2 vectors with boolean for columns and rows and every time we find a zero we set a flag to true
  * that is equal to the row and column.
- *
+ * <p>
  * this algorithm works fine so the time function is O(N x M) where N and M are the rows and columns and the space
  * function is O(N x M) as we have 2 vectors with flags.
- *
+ * <p>
  * Solution 2:
- *
+ * <p>
  * even if the solution 1 does ok, there is still something we can do about space function, we can't do anything about
  * time function as we have to touch every entry in the matrix
- *
+ * <p>
  * so to optimize the space function we can do the following instead of storing the zero's exact position in the matrix
  * we can just set the first row an column with zero for each zero we find and if the first row and column has zero
  * we cna set a simple flag.
- *
  *
  * @author Maxim Balan
  **/
@@ -33,7 +32,7 @@ public class ZeroMatrixV1_2 {
 
         int[][] matrix = getMatrix(column, row);
         setZero(2, 2, matrix);
-        setZero(column-1, row-2, matrix);
+        setZero(column - 1, row - 2, matrix);
 
         printMatrix(matrix);
         zeroMatrix(matrix);
@@ -47,7 +46,7 @@ public class ZeroMatrixV1_2 {
         boolean columnHasZero = false;
 
         for (int i = 0; i < matrix.length; i++) {
-            for (int j=0; j< matrix[0].length; j++) {
+            for (int j = 0; j < matrix[0].length; j++) {
                 if (matrix[i][j] == 0) {
                     if (i == 0 && j == 0) {
                         rowHasZero = true;
@@ -62,13 +61,13 @@ public class ZeroMatrixV1_2 {
         }
 
         //now nullify rows
-        for (int i = 0; i< matrix.length; i++) {
+        for (int i = 0; i < matrix.length; i++) {
             if (matrix[i][0] == 0 && i != 0)
                 nullifyRow(matrix, i);
         }
 
         //now nullify column
-        for (int i = 0; i< matrix[0].length; i++) {
+        for (int i = 0; i < matrix[0].length; i++) {
             if (matrix[0][i] == 0 && i != 0)
                 nullifyColumn(matrix, i);
         }
@@ -91,7 +90,7 @@ public class ZeroMatrixV1_2 {
     }
 
     private static void printMatrix(int[][] matrix) {
-        for (int i=0; i < matrix.length; i++) {
+        for (int i = 0; i < matrix.length; i++) {
             System.out.println("\n\t");
             for (int j = 0; j < matrix[0].length; j++) {
                 System.out.print(" " + matrix[i][j] + " |");
@@ -110,8 +109,8 @@ public class ZeroMatrixV1_2 {
     private static int[][] getMatrix(int column, int row) {
         int[][] matrix = new int[column][row];
         int counter = 0;
-        for (int i=0; i < column; i++) {
-            for(int j=0; j < row; j++) {
+        for (int i = 0; i < column; i++) {
+            for (int j = 0; j < row; j++) {
                 matrix[i][j] = counter;
                 counter++;
             }

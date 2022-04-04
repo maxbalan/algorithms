@@ -5,7 +5,7 @@ package linkedlist.util;
  *
  * @author Maxim Balan
  **/
-public class LinkedListNode <P> {
+public class LinkedListNode<P> {
 
     private P value;
     private LinkedListNode<P> next;

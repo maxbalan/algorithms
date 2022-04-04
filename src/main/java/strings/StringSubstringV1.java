@@ -43,7 +43,7 @@ public class StringSubstringV1 {
         if (ol != cl && ol > 0 && cl > 0) return false;
 
 
-        return isSubstring(original+original, check);
+        return isSubstring(original + original, check);
     }
 
     //assume you have no idea what is going on inside here, this just for the test

@@ -4,13 +4,13 @@ import java.util.LinkedList;
 
 /**
  * 23/10/18
- *
+ * <p>
  * Question:
- *
+ * <p>
  * write an algorithm which checks if one word is a substring of another. Given two strings, s1 and
  * s2, write a code to check if s2 is a rotation of s1 using only one call to isSubstring (e.g. fightfirefi is a rotation
  * of firefight)
- *
+ * <p>
  * solution 1:
  * Use linked list to rotate characters around get and remove first one and put at the end then convert the list to a
  * string and compare with the expected

@@ -2,13 +2,13 @@ package strings;
 
 /**
  * 06/10/18
- *
+ * <p>
  * Question:
- *
+ * <p>
  * Find all permutation of A in B string.
- *
+ * <p>
  * Solution:
- *
+ * <p>
  * not really an obvious one but convert the B string into a number which is the multiplication of each character
  * then take a character from A string and multiply to previous ones and devide by the one eliminated and if this 2 are
  * the same then it means we found a permutation
@@ -21,9 +21,7 @@ public class FindPermutationAinB {
         String b = "abcdabccbac"; // 4 permutations
 
         int counter = 0;
-
         int expected = 1;
-        int window = s.length();
 
         int bCount = 1;
 //        System.out.println("Expected = " + expected);

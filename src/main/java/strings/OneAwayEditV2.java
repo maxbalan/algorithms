@@ -49,7 +49,7 @@ public class OneAwayEditV2 {
 
     static boolean isOneEditAway(String a, String b) {
         if (a.length() - b.length() > 1 ||
-            a.length() - b.length() < -1) return false;
+                a.length() - b.length() < -1) return false;
 
         int vectA = getFlagVector(a);
         int vectB = getFlagVector(a);
@@ -57,7 +57,7 @@ public class OneAwayEditV2 {
         int tempA = vectA & ~vectB;
         int tempB = ~vectA & vectB;
         int temp = tempA | tempB;
-        return (temp & (temp -1)) == 0;
+        return (temp & (temp - 1)) == 0;
     }
 
     static int getFlagVector(String str) {

@@ -5,24 +5,23 @@ import linkedlist.util.LinkedListUtils;
 
 /**
  * 30/10/18
- *
+ * <p>
  * Question:
  * Implement an algorithm to find the Kth to last element of a singly linked list
- *
+ * <p>
  * k = 1 = last element
  * k = 2 = 1 to last element
- *
- *
+ * <p>
+ * <p>
  * Solution 1:
  * For this solution we gonna use a recursive call, so iterate through the list till we reach the last element and start
  * counting back until we hit the Kth element and print it.
-
+ * <p>
  * Its a nice and simple solution though we don't have a way to return the Node back, unless we have a global variable to
  * assign it to.
- *
+ * <p>
  * time: O(N) where N is the number of nodes in the list
  * space: O(N) where N is the number of nodes in the list
- *
  *
  * @author Maxim Balan
  **/

@@ -78,13 +78,13 @@ public class OneAwayEditV1_2 {
         int index1 = 0;
         int index2 = 0;
         boolean isDiscrepancy = false;
-        while(index1 <longest.length() && index2 < shortest.length()) {
+        while (index1 < longest.length() && index2 < shortest.length()) {
             if (longest.charAt(index1) != shortest.charAt(index2)) {
                 if (isDiscrepancy) return false;
                 else isDiscrepancy = true;
 
                 if (longest.length() == shortest.length())
-                    index2 ++;
+                    index2++;
             } else {
                 index2++;
             }
@@ -105,7 +105,6 @@ public class OneAwayEditV1_2 {
 
         return true;
     }
-
 
 
 }

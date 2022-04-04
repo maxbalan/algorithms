@@ -48,12 +48,11 @@ public class Partition {
         LinkedListNode<Integer> rh = right;
 
 
-        while(x != null) {
+        while (x != null) {
             if (x.getValue() < partitionBy) {
                 left.setNext(new LinkedListNode<>(x.getValue()));
                 left = left.getNext();
-            }
-            else {
+            } else {
                 right.setNext(new LinkedListNode<>(x.getValue()));
                 right = right.getNext();
             }

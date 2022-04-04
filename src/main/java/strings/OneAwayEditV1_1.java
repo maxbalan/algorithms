@@ -70,7 +70,7 @@ public class OneAwayEditV1_1 {
     static boolean isOneInsertRemoveAway(String longest, String shortest) {
         int index1 = 0;
         int index2 = 0;
-        while(index1 <longest.length() && index2 < shortest.length()) {
+        while (index1 < longest.length() && index2 < shortest.length()) {
             if (longest.charAt(index1) != shortest.charAt(index2)) {
                 if (index1 != index2)
                     return false;
@@ -94,7 +94,6 @@ public class OneAwayEditV1_1 {
 
         return true;
     }
-
 
 
 }

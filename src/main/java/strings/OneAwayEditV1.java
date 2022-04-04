@@ -69,20 +69,19 @@ public class OneAwayEditV1 {
 
     static boolean isOneInsertRemoveAway(String longest, String shortest) {
         int counter = 0;
-        for (int i = 0; i< shortest.length(); i++) {
+        for (int i = 0; i < shortest.length(); i++) {
             char l = longest.charAt(i);
             char s = shortest.charAt(i);
             if (l != s) {
                 s = shortest.charAt(i - 1);
                 if (counter != 0 && (longest.charAt(i) == s)) {
                     counter--;
-                }
-                else
+                } else
                     counter++;
             }
         }
 
-        return counter+1 <= 1;
+        return counter + 1 <= 1;
     }
 
     static boolean isOneReplaceAway(String a, String b) {
