@@ -13,7 +13,7 @@ package strings;
  * now consider that xy = s1 and yx = s2, so now to find s2 we need to cut s1 into to so basically into x and y and rearrange
  * them in order to get s2(yx) so in other words if we do s1+s1 = xyxy as you can se the s2(yx) is in there
  **/
-public class StringSubstringV1 {
+public class StringRotation {
 
     public static void main(String[] args) {
         String s1 = "firefight";

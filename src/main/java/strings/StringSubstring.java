@@ -15,7 +15,7 @@ import java.util.LinkedList;
  * Use linked list to rotate characters around get and remove first one and put at the end then convert the list to a
  * string and compare with the expected
  **/
-public class StringRotationV1 {
+public class StringSubstring {
 
     public static void main(String[] args) {
         String s1 = "firefight";
